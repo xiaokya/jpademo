@@ -20,7 +20,7 @@ public class MealSeriesController {
     @GetMapping(value = "/demo/findAll")
     public CommonResult findAll() {
         CommonResult result = new CommonResult();
-        try {
+        try {  
             List<MealSeries> list = mealSeriesService.findAll();
             result.setData(list);
             return result;
